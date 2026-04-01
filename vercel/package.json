@@ -1,0 +1,18 @@
+{
+  "name": "daily-checkin-api",
+  "version": "1.0.0",
+  "description": "微信群签到API服务",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node -e \"const api = require('./api/simple.js'); const req = {query:{msg:'签到',userId:'test',userName:'测试'}}; const res = {status:()=>res,setHeader:()=>res,send:(d)=>console.log(d)}; api.default(req,res);\""
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["wechat", "checkin", "api", "signin"],
+  "author": "",
+  "license": "MIT"
+}
